@@ -15,6 +15,7 @@
 		87C22F281C4FF0BC00AE0ACF /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C22F271C4FF0BC00AE0ACF /* Question.swift */; };
 		87C22F2A1C4FF9C300AE0ACF /* ViewWithButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C22F291C4FF9C300AE0ACF /* ViewWithButtons.swift */; };
 		87C22F2C1C5148F600AE0ACF /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C22F2B1C5148F600AE0ACF /* StoreManager.swift */; };
+		87C22F2E1C514F3E00AE0ACF /* cinema.json in Resources */ = {isa = PBXBuildFile; fileRef = 87C22F2D1C514F3E00AE0ACF /* cinema.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		87C22F271C4FF0BC00AE0ACF /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		87C22F291C4FF9C300AE0ACF /* ViewWithButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewWithButtons.swift; sourceTree = "<group>"; };
 		87C22F2B1C5148F600AE0ACF /* StoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		87C22F2D1C514F3E00AE0ACF /* cinema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cinema.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		87C22F121C4FEB1F00AE0ACF /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				87C22F2D1C514F3E00AE0ACF /* cinema.json */,
 				87C22F131C4FEB1F00AE0ACF /* AppDelegate.swift */,
 				87C22F2B1C5148F600AE0ACF /* StoreManager.swift */,
 				87C22F171C4FEB1F00AE0ACF /* Main.storyboard */,
@@ -131,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87C22F2E1C514F3E00AE0ACF /* cinema.json in Resources */,
 				87C22F1E1C4FEB1F00AE0ACF /* LaunchScreen.storyboard in Resources */,
 				87C22F1B1C4FEB1F00AE0ACF /* Assets.xcassets in Resources */,
 				87C22F191C4FEB1F00AE0ACF /* Main.storyboard in Resources */,
