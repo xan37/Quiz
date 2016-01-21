@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Quiz View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="QuizViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3G4-4d-fiV" customClass="ViewWithButtons" customModule="Quiz" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="56" width="600" height="427"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ouP-LV-qZm">
+                                        <rect key="frame" x="264" y="280" width="73" height="30"/>
+                                        <state key="normal" title="Вариант 2"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="3G4-4d-fiV" eventType="touchUpInside" id="OcH-lT-NZ7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNh-SS-rY1">
+                                        <rect key="frame" x="20" y="285" width="71" height="30"/>
+                                        <state key="normal" title="Вариант 1"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="3G4-4d-fiV" eventType="touchUpInside" id="Nas-Kb-Oap"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Jt-qm-FH7">
+                                        <rect key="frame" x="20" y="377" width="74" height="30"/>
+                                        <state key="normal" title="Вариант 3"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="3G4-4d-fiV" eventType="touchUpInside" id="ask-hf-mRn"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Текст вопроса" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZO-TO-jJk">
+                                        <rect key="frame" x="242" y="8" width="116" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eis-NE-1gt">
+                                        <rect key="frame" x="263" y="377" width="74" height="30"/>
+                                        <state key="normal" title="Вариант 4"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="3G4-4d-fiV" eventType="touchUpInside" id="aDG-5m-lqS"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="question3" translatesAutoresizingMaskIntoConstraints="NO" id="w9j-pK-fNh">
+                                        <rect key="frame" x="161" y="80" width="153" height="128"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="aZO-TO-jJk" firstAttribute="centerX" secondItem="3G4-4d-fiV" secondAttribute="centerX" id="1aK-lD-U1u"/>
+                                    <constraint firstItem="w9j-pK-fNh" firstAttribute="centerX" secondItem="3G4-4d-fiV" secondAttribute="centerX" id="i6w-E1-IkW"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="ImageView" destination="w9j-pK-fNh" id="9we-pH-k0v"/>
+                                    <outlet property="button1" destination="xNh-SS-rY1" id="bfg-95-YRM"/>
+                                    <outlet property="button2" destination="ouP-LV-qZm" id="BhT-QJ-36V"/>
+                                    <outlet property="button3" destination="2Jt-qm-FH7" id="6cO-yj-FJp"/>
+                                    <outlet property="button4" destination="Eis-NE-1gt" id="aV6-iQ-IJM"/>
+                                    <outlet property="topText" destination="aZO-TO-jJk" id="uEd-SV-xxx"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="quizView" destination="3G4-4d-fiV" id="w5l-4h-e0N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="455" y="354"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="question3" width="450" height="600"/>
+    </resources>
+</document>
